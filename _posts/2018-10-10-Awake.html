@@ -1,0 +1,51 @@
+---
+title: Awake()
+layout: post
+author: 2D Pixel Art Meets a 3D World
+---
+<!-- Text stuff -->
+
+<span class="image center"><img src="{{ 'assets/images/Banner.png' | relative_url }}" alt="Awake() Banner" /></span> 
+<h2>2D Pixel Art + 3D World</h2>
+<h3><em>
+	Awake() combines the charming, retro-inspired pixel art style with the freedom of movement a true 3D world provides. No tricks here.
+</em></h3>
+<br><hr><br>
+<span class="image right"><img src="{{ 'assets/images/DepthDemo.gif' | relative_url }}" alt="As the player jumps up and falls down, areas higher than the player become whiter, and areas below become blacker." /></span>
+<h2>A Unique Approach to 3D</h2>
+<p>
+	Shown is a demonstration of the shader I wrote for objects in the environment to render in such a way that helps communicate their height relative to the player. As blocks rise above the player, they fade to white, while objects below fade to black. Below is another demo, this time with a dramatic red-cyan color palette and a neat little wavy row of pillars.
+</p>
+<span class="image left"><img src="{{ 'assets/images/RippleDemo.gif' | relative_url }}" alt="Pillars ripple in a sine wave demonstrating the color-shifting shader." /></span>
+<p>
+	Games like "Hyper Light Drifter" and "Enter the Gungeon" greatly influenced my approach to this game. Hyper Light Drifter had such beautiful art, and it looked as 3D as anything, with the clever way light and shade seemed to work in the glowy, pixellated world. I found myself wishing I could explore more, break that third dimension and clamber over the mountains and structures. 
+	<br><br>
+	That was where I got the inspiration to make Awake() - a game that mixes the freedom of traversal and exploration a 3D world offers with the stylized and undeniably fashionable pixel art aesthetic.
+	<br><br>
+	Mixing a 3D world with the fundamentally 2D nature of pixel art was a unique challenge for me. Adding drop shadows that follow the player along and snap to the nearest object below worked decently well for a while, but I quickly realized that even with drop shadows, it was very difficult to intuitively perceive what depth different objects were at relative to the player. This 3D platformer lacks the free-moving perspective camera that other 3D platformers rely on to allow the player to perceive their environment effectively. That's when I had the idea for the shader. Perceiving depth and distance is still a bit of a challenge, but much less so than before, thanks to the environment depth shader.
+	<br><br>
+	The game is, obviously, still in progress. I have a bunch of concept art, a solid idea for how the game will play out, a simple combat system, and a fully functional physics system. Just dont have much content yet, mostly because I keep getting sidetracked by school assignments, work, and most of all these internship applications for places I really want to work!
+	<br><br>
+	If you're interested in having a look at the source code for this game, playing an old demo of it, or trying to get my most recent build running in Unity, my GitHub repository is public! Check it out <a style="color:#f0f" href="https://github.com/mlipina1234/ARPGPrototype">here.</a>
+	<br><br>
+</p>
+<h3><strong>
+Below are some more images of aspects of my game. Feel free to have a look and see what I've done!</strong>
+</h3>
+<br><hr><br>
+<div>
+	<span class="image left"><img src="{{ 'assets/images/Pathing.gif' | relative_url }}" alt="Demonstration of my pathfinding system." /></span>
+
+	<p>
+		Here's a demonstration of the <span style="color:#f0f">pathfinding</span> system I implemented! Due to the way my game handles physics, I couldn't use Unity's built-in physics system, so I implemented my own navigation system, using adjacency lists to make the map structure, and pathfinding through the map using A*. Works like a charm!
+	</p>
+	<br><br><br>
+</div>
+<hr><br>
+<div>
+	<span class="image right"><img src="{{ 'assets/images/ShadowCasting.gif' | relative_url }}" alt="Demonstration of my pathfinding system." /></span>
+
+	<p>
+		I implemented my own <span style="color:#f0f">shadow-casting</span> system, which uses the colliders of the objects the player is over to "slice up" the shadow sprites. A combination of some (expensive) C# scripting and shader magic. It's a minor detail in the game, but I think it really gives it a more authentic look, as opposed to having ellipses just floating around everywhere.
+	</p>
+</div>
