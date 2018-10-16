@@ -2,7 +2,6 @@
   {%- if site.google_analytics and jekyll.environment == 'production' -%}
     {%- include google_analytics.html -%}
   {%- endif -%}
-  
   <!-- Robots -->
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
   {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
@@ -17,6 +16,7 @@
   {%- assign _page_description = page.description | default: site.description | default: _page_title | escape -%}
 
   <title>{{- _page_title -}}</title>
+  <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | prepend: site.baseurl }}" >
   <meta name="description" content="{{- _page_description -}}" />
   <meta name="author" content="{{- site.author -}}" />
   
