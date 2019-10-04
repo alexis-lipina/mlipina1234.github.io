@@ -1,0 +1,20 @@
+Originally, without knowing the requirements for project 4, I had considered
+making a web-playable version of a Unity game I've been developing for just 
+shy of a year, and uploading that, and I wrote my proposal for the game as such.
+Due to the restriction of using Javascript, and using either PIXI.js or editing
+the DOM directly, I had to come up with a new idea for the game.
+
+I figured it would be relatively easy to implement a sniping game, and it would 
+be fun to play if I pulled it off correctly, since I had an enjoyable time playing
+web-based sniping games like it in the past. I built off of Circle Blast, keeping 
+the circle objects (for the most part), but tweaked many aspects of gameplay. The 
+"ship" became the center reticle, and collision with circles doesnt reduce health.
+The circles also pick from a list of colors, and the player is assigned one of the 
+colors of the currently-active list of circles to kill. It took a good while to get
+this to work, as storing a color for comparison is not a simple task. It took a good
+bit of stringification and reading PIXI docs to get it to work.
+
+Going forward, if I were to continue working on this, I would probably change the 
+graphics a bit so that the targets look more like stick figures than just circles.
+I'd add more levels as well, and probably have objects the targets can pass 
+behind, or collide with.
