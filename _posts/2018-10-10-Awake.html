@@ -19,11 +19,11 @@ author: 2D Pixel Art Meets a 3D World
 </p>
 <span class="image right" style="max-width: 40%"><img src="{{ 'assets/images/DepthAndOcclusion.gif' | relative_url }}" alt="As the player jumps up and falls down, areas higher than the player become lighter, and areas below become darker." /></span>
 <p>
-	In a game like EXALT, where due to the 3D gameplay the communication of this depth is vital to the actual gameplay, this was a problem that could not be overlooked. To attempt to solve this issue, I created a shader which creates a "gradient" effect above and below the player, where objects above the player fade to a lighter color, and objects below fade to a darker color.
+	In a game like EXALT, where due to the 3D gameplay the communication of this depth is vital to the actual gameplay, this was a problem that could not be overlooked. To attempt to solve this issue, I created a <span style="color:#f0f">shader</span> which creates a "gradient" effect above and below the player, where objects above the player fade to a lighter color, and objects below fade to a darker color.
 </p>
-<span class="image left" style="width: 40%"><img src="{{ 'assets/images/RipplePillars.gif' | relative_url }}" alt="Player walks up and down a staircase, and a drop-shadow follows underneath them." /></span>
+<span class="image left" style="width: 40%"><img src="{{ 'assets/images/ShadowCasting.gif' | relative_url }}" alt="Player walks up and down a staircase, and a drop-shadow follows underneath them." /></span>
 <p>
-	In addition to this, I implemented drop-shadows which are cast down from the player and other objects in the world, to help further communicate the position in "3D space" they occupy. Small-scale playtests before and after implementing these features showed marked improvements in player ability to perceive and navigate the space.
+	In addition to this, I implemented <span style="color:#f0f">drop-shadows</span> which are cast down from the player and other objects in the world, to help further communicate the position in "3D space" they occupy. Small-scale playtests before and after implementing these features showed marked improvements in player ability to perceive and navigate the space.
 	<br><br>
 	If you're interested in having a look at the source code for this game, my GitHub repository is public! Check it out <a style="color:#f0f" href="https://github.com/mlipina1234/ARPGPrototype">here.</a>
 	<br><br>
